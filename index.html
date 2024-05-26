@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      header{
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header>.full_box{
+        width: 90vw;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+      }
+
+      span{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 45px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: rgb(62, 126, 131);
+
+      }
+      body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      div.box{
+        width: 300px;
+        gap: 15px;
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 60px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 40px;
+      }
+      div.box>button:nth-of-type(4n+1){
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      }
+
+      div.box>button:first-child{
+        background-color: white ;
+        border: 1px solid gray;
+        grid-area: 1/1/2/5;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      div.box>button{
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+
+      div.box>button:nth-of-type(14){
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      div.box>button:nth-of-type(16){
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+
+      
+    </style>
+</head>
+<body>
+  <header>
+    <div class="full_box">
+      <span>Masai Calculater</span>
+      <div class="box">
+        <button></button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>x</button>
+        <button>C</button>
+        <button>0</button>
+        <button>=</button>
+        <button>/</button>  
+    </div>
+      
+    </div>
+  </header>
+    
+</body>
+</html>
